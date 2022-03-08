@@ -1,0 +1,19 @@
+{
+  "name": "cv_matthieu_thepaut",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Matsphere/CV_Matthieu_Thepaut.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Matsphere/CV_Matthieu_Thepaut/issues"
+  },
+  "homepage": "https://github.com/Matsphere/CV_Matthieu_Thepaut#readme"
+}

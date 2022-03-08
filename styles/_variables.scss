@@ -1,0 +1,19 @@
+$primarycolor : #4d309c;
+$secondarycolor : #c20000;
+$thirdcolor : #c2baba;
+
+@mixin flex ($align : center, $justify : space-between, $direction : row) {
+
+ display: flex;
+ align-items: $align;
+ justify-content: $justify;
+ flex-direction: $direction;
+    
+}
+
+@mixin border($width, $color, $radius : 0px) {
+
+    border: $width $color solid;
+    border-radius: $radius;
+    
+}

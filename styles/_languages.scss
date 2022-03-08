@@ -1,0 +1,84 @@
+.languages {
+    @include border(2px, $secondarycolor, 20px);
+    padding: 1rem;
+    margin: 1.5rem 0;
+    &-human {
+        padding-left: 1rem;
+
+        &-header {
+            font-style: italic;
+            font-weight: 200;
+            
+        }
+
+        &-list {
+            color: $primarycolor;
+
+            &-item {
+                margin: 0.5rem 0;
+
+                & p {
+                    color: black ;
+                }
+            }
+        }
+
+    }
+
+    &-code {
+        padding-left: 1rem;
+
+        &-header {
+            font-style: italic;
+            font-weight: 200;
+            
+        }
+
+        &-list {
+            color: $primarycolor;
+
+            &-item {
+                margin: 0.5rem 0;
+                @include flex;
+
+                & p {
+                    color: black ;
+                }
+                &-bar {
+                    width: 30%;
+                    height: 1rem;
+                    @include border(2px, $primarycolor);
+                    padding : 2px;
+
+                    &-css {
+                        width: 80%;
+                        height: 100%;
+                        background-color: green;
+                    }
+                    &-html {
+                        width: 80%;
+                        height: 100%;
+                        background-color: green;
+                    }
+                    &-js {
+                        width: 70%;
+                        height: 100%;
+                        background-color: green;
+                    }
+                    &-sql {
+                        width: 70%;
+                        height: 100%;
+                        background-color: green;
+                    }
+                    &-php {
+                        width: 10%;
+                        height: 100%;
+                        background-color: red;
+                    }
+                }
+            }
+        }
+
+    }
+   
+}
