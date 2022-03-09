@@ -1,3 +1,97 @@
+@-webkit-keyframes load-x {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    opacity: 0;
+  }
+  30% {
+    -webkit-transform: translateX(30%);
+            transform: translateX(30%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes load-x {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    opacity: 0;
+  }
+  30% {
+    -webkit-transform: translateX(30%);
+            transform: translateX(30%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes load-y {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    opacity: 0;
+  }
+  30% {
+    -webkit-transform: translateY(30%);
+            transform: translateY(30%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes load-y {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    opacity: 0;
+  }
+  30% {
+    -webkit-transform: translateY(30%);
+            transform: translateY(30%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: translateY(100%) rotate(0deg);
+            transform: translateY(100%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translateY(0) rotate(720deg);
+            transform: translateY(0) rotate(720deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: translateY(100%) rotate(0deg);
+            transform: translateY(100%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translateY(0) rotate(720deg);
+            transform: translateY(0) rotate(720deg);
+  }
+}
+
 .header {
   width: 100%;
   margin-bottom: 0.5rem;
@@ -35,6 +129,10 @@
   border: 2px #c20000 solid;
   border-radius: 20px;
   margin: 1rem 0;
+  -webkit-animation: load-x 1s 0s backwards;
+          animation: load-x 1s 0s backwards;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.589);
+          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.589);
 }
 
 .info-list {
@@ -69,6 +167,10 @@
   border-radius: 20px;
   margin: 1.5rem 0;
   padding: 1rem;
+  -webkit-animation: load-y 1s 1s backwards;
+          animation: load-y 1s 1s backwards;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.589);
+          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.589);
 }
 
 .profile-list {
@@ -88,6 +190,10 @@
   border-radius: 20px;
   padding: 1rem;
   margin: 1.5rem 0;
+  -webkit-animation: load-y 1s 2s backwards;
+          animation: load-y 1s 2s backwards;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.589);
+          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.589);
 }
 
 .languages-human {
@@ -188,6 +294,10 @@
   border-radius: 20px;
   margin: 1.5rem 0;
   padding: 1rem;
+  -webkit-animation: spin 2s 2s backwards;
+          animation: spin 2s 2s backwards;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.589);
+          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.589);
 }
 
 .interests-header {
@@ -210,6 +320,122 @@
 
 .interests-item-list-item p {
   color: black;
+}
+
+.education {
+  border: 2px #c20000 solid;
+  border-radius: 20px;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  -webkit-animation: load-x 1s 0.5s backwards;
+          animation: load-x 1s 0.5s backwards;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.589);
+          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.589);
+}
+
+.education-item {
+  margin: 1rem 0;
+}
+
+.education-item-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.education-item-header-date {
+  color: #4d4848;
+  font-style: italic;
+  font-weight: 200;
+}
+
+.education-item-header-arrow {
+  cursor: pointer;
+  color: #4d309c;
+  font-size: 1.5rem;
+}
+
+.education-item-header-arrow:hover {
+  color: #8063cf;
+  -webkit-transform: scale(130%, 130%);
+          transform: scale(130%, 130%);
+}
+
+.education-item-content {
+  padding: 1rem 0;
+  display: block;
+  -webkit-animation: load-x 0.3s 0s backwards;
+          animation: load-x 0.3s 0s backwards;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.experiences {
+  border: 2px #c20000 solid;
+  border-radius: 20px;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  -webkit-animation: load-y 1s 1.5s backwards;
+          animation: load-y 1s 1.5s backwards;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.589);
+          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.589);
+}
+
+.experiences-item {
+  margin: 1rem 0;
+}
+
+.experiences-item-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.experiences-item-header-date {
+  color: #4d4848;
+  font-style: italic;
+  font-weight: 200;
+}
+
+.experiences-item-header-arrow {
+  cursor: pointer;
+  color: #4d309c;
+  font-size: 1.5rem;
+}
+
+.experiences-item-header-arrow:hover {
+  color: #8063cf;
+  -webkit-transform: scale(130%, 130%);
+          transform: scale(130%, 130%);
+}
+
+.experiences-item-content {
+  padding: 1rem 0;
+  display: block;
+  -webkit-animation: load-x 0.3s 0s backwards;
+          animation: load-x 0.3s 0s backwards;
+  margin-bottom: 1rem;
+  font-style: italic;
 }
 
 html {
@@ -263,8 +489,21 @@ main {
 
 .l-right {
   -webkit-box-flex: 2;
-      -ms-flex: 2 0 65%;
-          flex: 2 0 65%;
+      -ms-flex: 2 1 65%;
+          flex: 2 1 65%;
   margin-left: 1.2rem;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.is-rotated {
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 /*# sourceMappingURL=style.css.map */

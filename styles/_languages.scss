@@ -2,6 +2,8 @@
     @include border(2px, $secondarycolor, 20px);
     padding: 1rem;
     margin: 1.5rem 0;
+    animation: load-y 1s 2s backwards;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.589);
     &-human {
         padding-left: 1rem;
 

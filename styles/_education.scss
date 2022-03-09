@@ -1,0 +1,55 @@
+.education {
+
+    @include border(2px, $secondarycolor, 20px);
+    margin: 1.5rem 0;
+    padding: 1rem;
+    animation: load-x 1s 0.5s backwards;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.589);
+  
+   
+    &-item  {
+
+        margin: 1rem 0;
+
+        &-header {
+            @include flex;
+
+            &-date {
+                color: $thirdcolor;
+                font-style: italic;
+                font-weight: 200;
+            }
+            
+            &-arrow {
+                cursor: pointer;
+                color: $primarycolor;
+                font-size: 1.5rem;
+
+                &:hover {
+                    color: lighten($primarycolor, 20%);
+                    transform: scale(130%, 130%);
+                    
+                }
+            }
+        }
+
+        &-content {
+            padding: 1rem 0;
+            display: block;            
+            animation: load-x 0.3s 0s backwards;
+            margin-bottom: 1rem;
+            font-style: italic;
+
+        }
+          
+  
+       
+          
+          
+    }
+  
+    
+  
+   
+  
+  }

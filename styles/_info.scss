@@ -1,6 +1,8 @@
 .info {
     @include border(2px, $secondarycolor, 20px);
     margin: 1rem 0;
+    animation: load-x 1s 0s backwards;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.589);
 
     &-list {
         list-style: none;

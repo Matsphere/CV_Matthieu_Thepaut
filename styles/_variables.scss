@@ -1,6 +1,6 @@
 $primarycolor : #4d309c;
 $secondarycolor : #c20000;
-$thirdcolor : #c2baba;
+$thirdcolor : #4d4848;
 
 @mixin flex ($align : center, $justify : space-between, $direction : row) {
 
@@ -17,3 +17,54 @@ $thirdcolor : #c2baba;
     border-radius: $radius;
     
 }
+
+@keyframes load-x {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+  
+    30% {
+      transform: translateX(30%);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes load-y {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+  
+    30% {
+      transform: translateY(30%);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes spin {
+    0% {
+      transform: translateY(100%) rotate(0deg);
+      
+    }
+  
+    
+
+    
+  
+    100% {
+      transform: translateY(0) rotate(720deg);
+      
+    }
+  }
+
