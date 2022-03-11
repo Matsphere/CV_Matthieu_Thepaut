@@ -5,6 +5,7 @@ educationItems.forEach(item => {
         if (!e.target.classList.contains('fa-angle-down')) {
             return;
         }
+        e.preventDefault();
         item.nextElementSibling.classList.toggle('is-hidden')
         e.target.classList.toggle('is-rotated')
     })

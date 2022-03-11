@@ -24,6 +24,7 @@
                 cursor: pointer;
                 color: $primarycolor;
                 font-size: 1.5rem;
+                margin-left: 0.5rem;
 
                 &:hover {
                     color: lighten($primarycolor, 20%);

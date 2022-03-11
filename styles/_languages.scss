@@ -15,6 +15,7 @@
 
         &-list {
             color: $primarycolor;
+            padding-left: 2rem;
 
             &-item {
                 margin: 0.5rem 0;
@@ -38,6 +39,7 @@
 
         &-list {
             color: $primarycolor;
+            padding-left: 2rem;
 
             &-item {
                 margin: 0.5rem 0;
@@ -53,29 +55,23 @@
                     padding : 2px;
 
                     &-css {
-                        width: 80%;
-                        height: 100%;
-                        background-color: green;
+                        @include bar(80%);
                     }
                     &-html {
-                        width: 80%;
-                        height: 100%;
-                        background-color: green;
+                        @include bar(80%);
                     }
                     &-js {
-                        width: 70%;
-                        height: 100%;
-                        background-color: green;
+                        @include bar(70%);
+                    }
+                    &-vue {
+                        @include bar(60%);
+
                     }
                     &-sql {
-                        width: 70%;
-                        height: 100%;
-                        background-color: green;
+                        @include bar(60%);
                     }
                     &-php {
-                        width: 10%;
-                        height: 100%;
-                        background-color: red;
+                        @include bar(10%, red);
                     }
                 }
             }

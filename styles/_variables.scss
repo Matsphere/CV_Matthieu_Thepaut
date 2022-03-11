@@ -18,6 +18,12 @@ $thirdcolor : #4d4848;
     
 }
 
+@mixin bar($width, $color : green) {
+  width : $width ;
+  height: 100%;
+  background-color: $color;
+}
+
 @keyframes load-x {
     0% {
       transform: translateX(100%);
@@ -54,8 +60,16 @@ $thirdcolor : #4d4848;
 
   @keyframes spin {
     0% {
-      transform: translateY(100%) rotate(0deg);
+      transform:  rotate(0deg)  translateX(100%);
+      opacity: 0;
       
+    }
+
+
+    30% {
+      transform:  rotate(360deg)  translateX(80%);
+      opacity: 0.3;
+
     }
   
     
@@ -63,7 +77,8 @@ $thirdcolor : #4d4848;
     
   
     100% {
-      transform: translateY(0) rotate(720deg);
+      transform:  rotate(1080deg) translateX(0);
+      opacity: 1;
       
     }
   }
